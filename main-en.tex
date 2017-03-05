@@ -1,0 +1,87 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{casual}
+\moderncvcolor{blue}
+
+% 页面设置
+\usepackage[scale=0.75]{geometry}
+% \renewcommand{\baselinestretch}{0.9}\normalsize
+% timeline
+\usepackage[firstyear=2009,lastyear=2018]{moderntimeline}
+\tlwidth{0.8ex}
+\tltext{\tiny}
+
+% 个人信息
+\name{Kai}{Zhang}
+% \title{个人简历}
+\phone[mobile]{+86-173 1914 9821}
+\email{kaizhang.shanxi@gmail.com}
+\photo[56pt][0.2pt]{img/avatar}
+%%%%%%%%%%%%%%%%%%%%
+% 内容
+%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%
+% 教育经历
+%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+
+\tlcventry{2013/9}{2016/7}{Master}{Tsinghua University}{Beijing}{\textit{GPA:3.1/4.0}}{}
+
+\tlcventry{2009/9}{2013/7}{Undergraduate}{University of Science and Technology of China}
+          {Hefei}{\textit{GPA:3.5/4.3}}{}
+
+%%%%%%%%%%%%%%%%%%%%
+% 工作经历
+%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\tlcventry{2016/7}{0}{Backend Developer}{Creditease}{Beijing}{}
+          {\textbf{LAIN --- A PaaS System based on Docker.}
+            LAIN aims at simplifying the system management and app deployment.
+            What's more, it can optimize the scheduling of resource.
+            \begin{itemize}
+            \item Console display all apps deployed in the cluster according to the data from deployd,
+              but it won't display anything if only a small part of the data is invalid.
+              I enhance the type check, and have fixed this issue.
+            \item Lain-cli can only parse one command, i.e., lack the support for options and entrypoint.
+              Then I add the parse logic in lain-sdk, lain-cli and console.
+            \item Bootstrap script setup the cluster on physical or virtual machines.
+              And it's the precondition to deploy apps. However, there is no test for it before.
+              I write the tests, making it less risky to modify code for our team.
+            \end{itemize}
+          }
+
+\tlcventry{2016/7}{0}{Backend Developer}{Creditease}{Beijing}{}
+          {\textbf{YiPush --- Push Notifications to Users' Mobile App}
+            \begin{itemize}
+              \item Move from http1 to http2 to connect apple push notification service(apns)
+              \item Add success rate stats
+            \end{itemize}
+          }
+
+\tlcventry{2016/7}{0}{Backend Developer}{Creditease}{Beijing}{}
+          {\textbf{Some APIs}
+            \begin{itemize}
+              \item Write an api which can verify user's identity
+              \item Write an api which can tracking the visit to itself for analysis
+            \end{itemize}
+          }
+
+\tlcventry{2015/7}{0}{Developer}{At Home}{Beijing}{}
+          {\textbf{Information Manage System for our Department}
+            \begin{itemize}
+              \item Design database
+              \item Write front-end pages
+              \item Implement the login logic
+            \end{itemize}
+          }
+
+\section{Computer Skills}
+
+\cvdoubleitem{Languages}{Haskell, Go, Python, Java}{Tools}{Bash, Docker}
+
+\clearpage
+\end{document}

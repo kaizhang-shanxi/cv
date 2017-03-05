@@ -1,0 +1,106 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{casual}
+\moderncvcolor{blue}
+% 字体
+\usepackage{xltxtra,fontspec,xunicode}
+\usepackage[slantfont,boldfont,CJKchecksingle]{xeCJK}
+\CJKsetecglue{\hskip 0.15em plus 0.05 em minus 0.05em}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip=0pt plus 1pt minus 0.1pt
+% \setCJKmainfont[BoldFont=Adobe Heiti Std,Scale=0.8]{Adobe Song Std}
+\setCJKmainfont[BoldFont=Adobe Heiti Std]{Adobe Song Std}
+\setCJKsansfont{Adobe Heiti Std}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+\setCJKfamilyfont{FZLiuKai}{FZSuXinShiLiuKaiS-R-GB}
+\newcommand{\FZLiuKai}{\CJKfamily{FZLiuKai}}
+\renewcommand*{\namefont}{\fontsize{26}{28}\FZLiuKai}
+\renewcommand*{\titlefont}{\fontsize{16}{18}}
+\renewcommand*{\sectionfont}{\fontsize{12}{14}}
+% 页面设置
+\usepackage[scale=0.78]{geometry}
+% \renewcommand{\baselinestretch}{0.9}\normalsize
+% timeline
+\usepackage[firstyear=2009,lastyear=2017]{moderntimeline}
+\tlwidth{0.8ex}
+\tltext{\tiny}
+% 水平列表
+\usepackage[inline]{enumitem}
+% 个人信息
+\name{张}{凯}
+% \title{个人简历}
+\address{海淀区清华大学26\#楼516室}{北京（邮编：100084）}
+\phone[mobile]{+86-131 6174 3225}
+\email{bibaijin@gmail.com}
+% \homepage{bibaijin.github.io/homepage/}
+\photo[56pt][0.2pt]{img/avatar}
+%%%%%%%%%%%%%%%%%%%%
+% 内容
+%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+\vspace{-2.5em}
+\section{教育背景}
+\tlcventry{2013/9}{0}{硕士}{清华大学}{北京}{\textit{GPA:3.1/4.0}\hfill 籍贯%
+\hspace{0.3cm}山西忻州}{电子工程系，电子科学与技术\hfill 出生年月%
+\hspace{0.3cm}1991 年 4 月}
+\tlcventry{2009/9}{2013/7}{双学士}{中国科学技术大学}{合
+肥}{\textit{GPA:3.5/4.3}}{电子工程与信息科学系，电子信息工程\hfill\textbf{双学
+位}\hspace{0.3cm}\textbf{工商管理}}
+\section{技能水平}
+\cvitem{计算机}{熟悉 \textbf{Linux} 环境，熟悉 Shell、Python 和 Golang\hfill
+英语\hspace{0.3cm}524 (六级)}
+\section{项目经历}
+\tldatecventry{2015/6}{后台开发实习生}{宜信大数据}{北京}
+{\textbf{LAIN --- 云计算平台}}{
+  %Lain 是一个 docker 管理系统，是一个 PaaS 平台。我完成的工作有：
+  \begin{itemize*}[itemjoin=\hfill]
+    \item 用 go 语言实现 proxy
+    \item 用 python 写测试脚本，并用 Jenkins 集成
+  \end{itemize*}}
+\tlcventry{2015/7}{0}{维护者与编写者}{实验室}{北京}{电子系信息管理系统}{
+  \begin{itemize*}[itemjoin=\hfill]
+    \item 添加博士生论坛管理模块
+    \item 重构数据库
+    \item 重新实现登录等功能，重写界面
+  \end{itemize*}}
+\tldatecventry{2015/10}{编写者}{实验室}{北京}{社区发现}{
+  \begin{itemize*}[itemjoin=\hfill]
+    \item 知乎爬虫
+    \item 局部社区发现
+    \item 用回位随机游走进行 Top-k 推荐
+  \end{itemize*}}
+\tlcventry{2014/11}{0}{参与者}{实验室}{北京}{旋进波 --- 多路复用系统}
+{%利用旋进波实现了一套多路复用系统。我完成的工作有：
+  \begin{itemize*}[itemjoin=\hfill]
+    \item 用 VB 实现计算机、发射机和接收机之间的通信
+    \item 用 Matlab 解调出旋进波的模式
+  \end{itemize*}}
+\section{社工经历}
+\tlcventry{2013/9}{2014/7}{党支部书记}{无研132}{北京}{班级管理}{
+  \begin{itemize*}[itemjoin=\hfill]
+    \item 领导组织班级活动，形成凝聚力
+    \item 带领全班获得集体评优\textbf{全校第三名}的好成绩
+  \end{itemize*}}
+\tlcventry{2015/9}{0}{带班助理}{电子系研工组}{北京}{班级管理}{
+  \begin{itemize*}[itemjoin=\hfill]
+    \item 指导班级活动
+    \item 参与筹划和组织电子系的重要活动
+    \item 关心帮助有困难同学
+  \end{itemize*}}
+\tlcventry{2014/9}{2015/7}{参与者}{亚洲青年中心}{北京}{\textbf{研究生领导力训
+练营}}{
+  \begin{itemize*}[itemjoin=\hfill]
+    \item 与留学生一起住宿，互相学习
+    \item 参与组织圣诞节、保龄球赛和生日 party 等活动
+  \end{itemize*}}
+\section{曾获奖励}
+\tldatecventry{2014/9}{清华大学``优秀研究生党支部书记''}{}{}{}{}
+% \vspace{-0.8em}
+\tldatecventry{2013/6}{中科大``校优秀毕业生''}{}{}{}{}
+% \vspace{-0.8em}
+\tlcventry{2010}{2012}{中科大``校优秀奖学金''}{铜奖}{三次}{}{}{}
+\section{其他情况}
+\cvitem{个人兴趣}{骑行；乒乓球，羽毛球；读书\hfill 自我评价\hspace{0.3cm}数理
+基础好，兴趣广泛，踏实认真}
+\clearpage
+\end{document}
